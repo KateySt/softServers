@@ -15,17 +15,15 @@ public class LoopsDemo {
 
         int n = sc.nextInt();
 
-        int i = 0;
+        int i = 1;
         int counter = 0;
         int sum = 0;
 
         while (counter != Math.abs(n)) {
-            if (i % 2 == 1) {
-                System.out.println(i);
-                sum += i;
-                counter++;
-            }
-            i++;
+            System.out.println(i);
+            sum += i;
+            counter++;
+            i += 2;
         }
         System.out.println("Sum : " + sum);
 
