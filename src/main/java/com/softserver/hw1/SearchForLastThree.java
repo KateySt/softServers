@@ -9,9 +9,9 @@ public class SearchForLastThree {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number : ");
-        int num = sc.nextInt();
+        int num = sc.nextInt()%10;
 
-        if ((num == 3) || (num > 10 && num % 10 == 0))
+        if ((num == 3) )
             System.out.println("The last three found");
         else
             System.out.println("The last three no found");
