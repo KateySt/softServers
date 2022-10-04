@@ -11,7 +11,7 @@ public class SearchForLastThree {
         System.out.print("Input number : ");
         int num = sc.nextInt()%10;
 
-        if ((num == 3) )
+        if (num == 3)
             System.out.println("The last three found");
         else
             System.out.println("The last three no found");
