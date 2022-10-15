@@ -78,11 +78,19 @@ public class ArrayPractice {
         }
         printArray(arr);
     }
+
     public static int[] unionOfArrays(int[] array1, int[] array2) {
-        return IntStream.concat(Arrays.stream(array1), Arrays.stream(array2))
-                .toArray();
+
+        int[] array3 = new int[array1.length + array2.length];
+
+        System.arraycopy(array1, 0, array3, 0, array1.length);
+        System.arraycopy(array2, 0, array3, array1.length, array2.length);
+
+        return array3;
+        //return IntStream.concat(Arrays.stream(array1), Arrays.stream(array2)).toArray();
     }
-    public static void printArray(int[] arr){
+
+    public static void printArray(int[] arr) {
         for (int a : arr)
             System.out.print(a + " ");
         System.out.println();
