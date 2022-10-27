@@ -15,9 +15,8 @@ public class Enemy implements Mortal {
         return health;
     }
 
-    public int takeDamage(int damage) {
+    public void takeDamage(int damage) {
         health -= damage;
-        return health;
     }
 
     @Override
