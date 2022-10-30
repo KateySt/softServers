@@ -9,7 +9,7 @@ public class TrainingGround {
     public static void main(String[] args) {
         Enemy enemy = new Enemy(100);
 
-        Archer archer = new Archer("JoJo");
+        Archer archer = new Archer("JoJo",50);
         archer.attackEnemy(enemy);
 
     }

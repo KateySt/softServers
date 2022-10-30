@@ -1,10 +1,13 @@
 package com.softserver.hw4.enemy;
 
-public class Zombie extends Enemy{
+import com.softserver.hw4.hero.Hero;
+
+public class Zombie extends Enemy {
     public Zombie(int health) {
         super(health);
     }
-    public void resurrection(){
+
+    public void resurrection() {
         super.setHealth(50);
     }
 }
